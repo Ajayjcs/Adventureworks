@@ -1,0 +1,6 @@
+{
+	"name": "AjIntegration",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
