@@ -1,0 +1,25 @@
+{
+	"name": "Database1",
+	"properties": {
+		"Name": "Database1",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://gold@ajadl.dfs.core.windows.net/Database1",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "ajsynap-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "9d716378-c5f0-4e91-b6f3-523957029829"
+	},
+	"type": "DATABASE"
+}

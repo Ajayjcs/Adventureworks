@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 4",
+	"properties": {
+		"content": {
+			"query": "CREATE VIEW product_lookup\nAS\nSELECT\n     *\nFROM\n    OPENROWSET(\n        BULK 'https://ajadl.dfs.core.windows.net/gold2/product_lookup/',\n        FORMAT = 'DELTA'\n    ) AS [result]\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "gold_db",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

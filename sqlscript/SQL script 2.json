@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 2",
+	"properties": {
+		"content": {
+			"query": "-- This is auto-generated code\nCREATE VIEW Calendar_Lookup\nAS\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://ajadl.dfs.core.windows.net/gold2/Calendar_Lookup/',\n        FORMAT = 'DELTA'\n    ) AS [result]\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "gold_db",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

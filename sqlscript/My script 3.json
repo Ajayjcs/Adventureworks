@@ -1,0 +1,17 @@
+{
+	"name": "My script 3",
+	"properties": {
+		"content": {
+			"query": "SELECT Male, COUNT(1) AS NEWMALE\nFROM Gender\nGROUP BY Male\nORDER BY NEWMALE DESC;\n\n\nSELECT Team_Country,\nSUM(Gold) gOLD,\nSUM(Silver),\nSUM(Bronze)\nFROM medals\nGROUP BY Team_Country\nORDER BY gOLD DESC;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "AjSql",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
